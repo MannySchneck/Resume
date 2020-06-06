@@ -1,0 +1,37 @@
+@font-face {
+	font-family: Helvetica;
+	src: local("Helvetica Neue")
+}
+
+.domains > *, ul > li > ul > li {
+	display: inline-block;
+}
+
+h3 + ul > li::before {
+	content: "\2022";
+	margin-right: .25em;
+}
+
+h3 + ul > li {
+	Display: flex;
+}
+
+ul li ul {
+	background: #aaaaaa;
+	flex-shrink: 0;
+	align-self: flex-end;
+	margin-left: auto;
+	width: 30%;
+}
+
+.domains > *:not(:last-of-type):after , ul li ul li:not(:last-of-type):after 
+{
+	content: ",";
+}
+
+body {
+	margin: .5in;
+	display: grid;
+	grid-template-columns: 80% 20%;
+	font-family: Helvetica;
+}
