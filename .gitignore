@@ -1,12 +1,12 @@
-.DS_Store
-.idea
-.log
-.dvi
-.out
-.pdf
-.bbl
-.blg
-.aux
+*.DS_Store
+*.idea
+*.log
+*.dvi
+*.out
+*.pdf
+*.bbl
+*.blg
+*.aux
 tmp/
 
 
