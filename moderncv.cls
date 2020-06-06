@@ -44,6 +44,7 @@
   \setlength\paperheight{\paperwidth}
   \setlength\paperwidth{\@tempdima}}
 
+\makeatletter
 % font size options
 \newcommand\@ptsize{}
 \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
@@ -191,7 +192,6 @@
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
 
-\RequirePackage{l3regex}
 
 %-------------------------------------------------------------------------------
 %                class definition
@@ -717,6 +717,7 @@
 % usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{}
 
+\makeatother
 
 \endinput
 
