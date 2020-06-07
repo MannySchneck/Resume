@@ -3,21 +3,25 @@
 	src: local("Helvetica Neue")
 }
 
-.domains > *, ul > li > ul > li {
+.experience ul > li > ul > li {
 	display: inline-block;
 }
 
-h3 + ul > li::before {
+.experience h3 + ul > li::before {
 	content: "\2022";
 	margin-right: .25em;
 }
 
-h3 + ul > li {
-	Display: flex;
+.experience h3 + ul > li {
+	display: flex;
 }
 
-ul li ul {
-	background: #aaaaaa;
+.experience h3 + ul > li:nth-child(even) {
+	background: #ABC4DE;
+}
+
+
+.experience ul li ul {
 	flex-shrink: 0;
 	align-self: flex-end;
 	margin-left: auto;
@@ -31,7 +35,6 @@ ul li ul {
 
 body {
 	margin: .5in;
-	display: grid;
 	grid-template-columns: 80% 20%;
 	font-family: Helvetica;
 }
