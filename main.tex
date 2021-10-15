@@ -51,8 +51,22 @@
 %   -----       resume       ---------------------------------------------------------
 \makecvtitle
 
-
 \section{Experience}
+\cventry{2020.11--present}{Software Engineer}{Cerebrae}{San Francisco (remote)}{}{
+  Backend engineer building an actuarial services platform
+  \begin{itemize}
+  \item Sped up main application workflows by 10x by re-building our pubsub client infra.
+  \item Built out calculations for a financial modeling service.
+     [\textsc{kubernetes}, \textsc{golang}]
+  \item Maintained handrolled data-engineering infra and managed integration specs and job runs.
+     [\textsc{sql}, \textsc{golang}, \textsc{yaml} (so much yaml)]
+  \item Led migration efforts to combine medical/geographic code and grouping services to achieve a strongly consistent data model.
+     [\textsc{kubernetes}, \textsc{postgres}, \textsc{gcp cloud sql}]
+  \item Dockerized core development toolchain to prevent version drift on local builds, resolving long-standing issues around noisy commit diffs for generated code (protobuf, sql mapping).
+     [\textsc{linux tooling}, \textsc{docker}]
+  \end{itemize}
+}
+
 \cventry{2019.3--present}{Software Engineer}{Collective Health}{Chicago}{}{
   Backend engineer launching new data ingestion platform
   \begin{itemize}
@@ -75,7 +89,6 @@
   \begin{itemize}
   \item Led the design and development of a single page application that was
     deployed to mobile devices as a hybrid app. [\textsc{react}, \textsc{redux}, \textsc{apache cordova}]
-  \item Implemented secondary backend using express.js and postgres to support robust local testing on the application frontend. [\textsc{postgres}, \textsc{node.js}]
   \item Managed application release cycle and led integration to produce weekly demo builds.
   \item Designed and implemented frontend deployment processes for iOS, Android, and Web. [\textsc{bitbucket pipelines}, \textsc{bitrise.io}]
   \item Analyze request failures on an AWS Lambda based backend and provide fixes to the backend team. [\textsc{aws lambda}, \textsc{aws cloudwatch}, \textsc{dynamodb}]
